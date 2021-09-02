@@ -1,0 +1,14 @@
+RANDOM USER GENERATOR API:
+
+https://randomuser.me/
+
+fetch('https://randomuser.me/api/')
+    .then(response => response.json())
+    .then(data => console.log(data))
+
+
+
+
+ICONS:
+https://heroicons.com/
+
