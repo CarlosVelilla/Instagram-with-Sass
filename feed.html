@@ -7,24 +7,27 @@
   <title>Instagram</title>
   <link rel="stylesheet" href="">
   <link rel="icon" href="./favicon.svg">
-  <script src="./functions.js" defer async></script>
+  <script src="./assets/js/test-functions.js" defer async></script>
 </head>
 
 <body>
 
   <header id="header" class="header">
     <article class="header__logo">
-      <img src="" alt="" id="" class="logo__img">
+      <a href="/feed.html"><img src="./assets/img/svg-logos/logo-black-instagram.svg" alt="Instagram logo" id="header-logo" class="logo__img"></a>
     </article>
     <article class="header__search">
-      <input type="text" placeholder="&#128269; Busca" id="search-input" class="search__input"/>
+      <div class="search__container">
+        <input type="text" placeholder="&#128269; Busca" id="search-input" class="search__input"/>
+        <img src="./assets/img/svg-icons/outline/search.svg" alt="">
+      </div>
     </article>
     <nav class="header__menu">
-      <span class="menu__icon menu__icon--active">H</span>
-      <span class="menu__icon">M</span>
-      <span class="menu__icon">E</span>
-      <span class="menu__icon">L</span>
-      <img src="" alt="" id="" class="menu__profile-pic">
+      <img src="./assets/img/svg-icons/solid/home.svg" alt="Home" id="home-icon" class="menu__icon menu__icon--active"></img>
+      <img src="./assets/img/svg-icons/outline/paper-airplane.svg" alt="Messages" class="menu__icon"></img>
+      <img src="./assets/img/svg-icons/outline/compass.svg" alt="Explore" id="explore-icon" class="menu__icon"></img>
+      <img src="./assets/img/svg-icons/outline/heart.svg" alt="Notifications" class="menu__icon"></img>
+      <img src="#" alt="Profile" id="menu-profile-pic" class="menu__profile-pic">
     </nav>
   </header>
 
