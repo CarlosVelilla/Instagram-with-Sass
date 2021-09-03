@@ -14,7 +14,7 @@ Let's start with some theory about SCSS and Sass.
     <li>What does a pre-processor have to do with SASS?</li>
     <p>A pre-processor is useful because it can help with the maintenance of CSS in medium-large sites, by giving the tools that can help building, editing, and organising the files and the code itself.</p>
     <li>Why use SASS?</li>
-      </ul> 
+      <ul> 
         <li>It's CSS syntax friendly</li>
         <li>It offers variables for whatever you want</li>
         <li>It uses nested syntax</li>
@@ -24,7 +24,7 @@ Let's start with some theory about SCSS and Sass.
         <li>If you know SASS, you can customize Bootstrap 4 (and beyond)</li>
       </ul>
     <li>SASS has disadvantages? Which are?</li>
-      </ul> 
+      <ul> 
         <li>The developer must have enough time to learn new features present in this preprocessor before using it.</li>
         <li>Using Sass may cause losing benefits of browser's built-in element inspector.</li>
         <li>Code has to be compiled.</li>
