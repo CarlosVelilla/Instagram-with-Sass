@@ -1,0 +1,21 @@
+%remove-link-style {
+  text-decoration: none;
+  color: inherit;
+}
+
+%link-like-button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  display: block;
+  text-decoration: none;
+  color: initial;
+}
+
+%flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,170 @@
+@use '../../abstracts/utils';
+
+body {
+  max-width: 30rem;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 0.9rem;
+  background-color: #FAFAFA;
+}
+
+.page-container {
+  height: 100vh;
+  @extend %flex-column-center;
+}
+
+.main-container {
+  margin-top: 2rem;
+  
+  &__login {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    }
+  }
+  
+.login__prime {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid lightgrey;
+}
+
+.header__logo {
+  width: 12rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.prime__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__input {
+  width: 18rem;
+  padding: .7rem;
+  margin-top: .4rem;
+  font-size: 0.8rem;
+  background-color: #FAFAFA;
+  border: 1px solid lightgrey;
+
+}
+
+.login__btn {
+  display: flex;
+  justify-content: center;
+  width: 19.6rem;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight:500;
+  text-decoration: none;
+  color: white;
+  background-color: #0095f6;
+}
+
+.password-unvalid {
+  pointer-events: none;
+  background-color: #0095f659;
+}
+
+.prime__division {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #8e8e8e;
+}
+
+.prime__division::before, .prime__division::after {
+  content: '';
+  display: block;
+  flex: 1;
+  height: 1px;
+  background-color: lightgrey;
+}
+
+.prime__division::before {
+  margin-right: 1rem;
+}
+
+.prime__division::after {
+  margin-left: 1rem;
+}
+
+.prime__fb-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.fb-login__login-link {
+  @extend %remove-link-style;
+  color: #385185;
+  font-size: .9rem;
+  font-weight: 600;
+
+    &::before {
+      margin-right: .5rem;
+      background-image: url("../img/index/facebook-logo.png");
+      width: 1rem;
+      content: 'F';
+      display: inline-block;
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+}
+
+.fb-login__forgot-link {
+  @extend %remove-link-style;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: .75rem;
+}
+
+.login__sign-up {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  background-color: #FFFFFF;
+  border: 1px solid lightgrey;
+}
+
+.sign-up {
+
+  &__text {
+    padding: 1rem 0;
+
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #00A2F8;
+  }
+}
+
+.get-app__text {
+  text-align: center;
+}
+
+.get-app__store-links {
+  display: flex;
+  justify-content: center;
+
+  & a img {
+    width: 8rem;
+  }
+
+  & a:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
