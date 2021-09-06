@@ -5,122 +5,199 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="icon" href="./favicon.svg">
-  <script src="./assets/js/test-functions.js" defer async></script>
+  <script src="./assets/js/feed.js" defer async></script>
 </head>
 
 <body>
-
-  <header id="header" class="header">
-    <article class="header__logo">
-      <a href="/feed.html"><img src="./assets/img/svg-logos/logo-black-instagram.svg" alt="Instagram logo" id="header-logo" class="logo__img"></a>
-    </article>
-    <article class="header__search">
-      <div class="search__container">
-        <input type="text" placeholder="&#128269; Busca" id="search-input" class="search__input"/>
-        <img src="./assets/img/svg-icons/outline/search.svg" alt="">
-      </div>
-    </article>
-    <nav class="header__menu">
-      <img src="./assets/img/svg-icons/solid/home.svg" alt="Home" id="home-icon" class="menu__icon menu__icon--active"></img>
-      <img src="./assets/img/svg-icons/outline/paper-airplane.svg" alt="Messages" class="menu__icon"></img>
-      <img src="./assets/img/svg-icons/outline/compass.svg" alt="Explore" id="explore-icon" class="menu__icon"></img>
-      <img src="./assets/img/svg-icons/outline/heart.svg" alt="Notifications" class="menu__icon"></img>
-      <img src="#" alt="Profile" id="menu-profile-pic" class="menu__profile-pic">
-    </nav>
-  </header>
-
-  <main>
-    <section id="stories-container" class="main__stories">
-      <div id="story-card" class="stories__card stories__card--own">
-        <div id="stories-img-container" class="card__img-container">
-          <img src="" alt="" id="stories-img" class="card__img">
+  <div class="feed__page-container">
+    <header id="header" class="feed__header">
+      <a href="/feed.html"><img src="./assets/img/svg-logos/logo-black-instagram.svg" alt="Instagram logo" id="header-logo" class="feed-header__logo"></a>
+      <article class="header__search">
+        <div class="search__container">
+          <input type="text" placeholder="Search" id="search-input" class="search__input"/>
+          <img src="./assets/img/svg-icons/solid-color/search-grey.svg" alt="" class="search-icon">
         </div>
-        <span id="story-username" class="card__username"></span>
-      </div>
-    </section>
-
-    <section id="feed" class="feed">
-
-      <!-- * EXAMPLE CARD * -->
-      <article class="feed__post">
-        <header class="post__header">
-          <div class="header__profile-pic"></div>
-          <div class="header__info">
-            <div class="info__username"></div>
-            <div class="info__location"></div>
-          </div>
-          <div class="header__options"></div>
-        </header>
-        <img src="" alt="" class="post__img">
-        <section class="post__info">
-          <div id="post-info-options" class="info__options"></div>
-          <div id="post-info-likes" class="info__likes"></div>
-        </section>
-        <section id="post-comments-container" class="post__comments">
-          <div class="comments__load-more"></div>
-          <div class="comments__coment"></div>
-          <div class="comments__coment"></div>
-        </section>
-        <section class="post__add-comment">
-          <img src="" alt="" class="add-comment__emoji">
-          <input type="text" class="add-comment__input">
-          <button class="add-comment__submit"></button>
-        </section>
       </article>
-
-    </section>
-
-  </main>
-
-  <aside id="" class="aside-info">
-
-    <section id="" class="aside-info__user">
-      <div id="" class="user__profile-pic"></div>
-      <div id="" class="user__info">
-        <div id="" class="user__info--username"></div>
-        <div id="" class="user__info--first-name"></div>
-      </div>
-      <a href="#" id="" class="user__change-user"></a>
-    </section>
-
-    <section id="" class="aside-info__suggestions">
-      <header id=""  class="suggestions__header">
-        <div id="" class="suggestions__header--tittle"></div>
-        <div id="" class="suggestions__header--see-all"></div>
-      </header>
-      
-      <!-- * SUGGESTION EXAMPLE * -->
-      <div class="suggestion">
-        <div class="suggestion__img"></div>
-        <div class="suggestion__info">
-          <div class="suggestion__info--name"></div>
-          <div class="suggestion__info--relation"></div>
-        </div>
-        <div class="suggestion__follow"></div>
-      </div>
-    </section>
-
-    <footer id="footer" class="footer">
-      <nav>
-        <ul>
-          <a href="#"><li class="footer__nav--link">About</li></a>
-          <a href="#"><li class="footer__nav--link">Help</li></a>
-          <a href="#"><li class="footer__nav--link">Press</li></a>
-          <a href="#"><li class="footer__nav--link">API</li></a>
-          <a href="#"><li class="footer__nav--link">Jobs</li></a>
-          <a href="#"><li class="footer__nav--link">Privacy</li></a>
-          <a href="#"><li class="footer__nav--link">Terms</li></a>
-          <a href="#"><li class="footer__nav--link">Locations</li></a>
-          <a href="#"><li class="footer__nav--link">Top Accounts</li></a>
-          <a href="#"><li class="footer__nav--link">Hashtags</li></a>
-          <a href="#"><li class="footer__nav--link">Language</li></a>
-        </ul>
+      <nav class="header__menu">
+        <img src="./assets/img/svg-icons/solid/home.svg" alt="Home" id="home-icon" class="menu__icon menu__icon--active"></img>
+        <img src="./assets/img/svg-icons/outline/paper-airplane.svg" alt="Messages" class="menu__icon"></img>
+        <img src="./assets/img/svg-icons/outline/compass.svg" alt="Explore" id="explore-icon" class="menu__icon"></img>
+        <img src="./assets/img/svg-icons/outline/heart.svg" alt="Notifications" class="menu__icon"></img>
+        <img src="./assets/img/feed/user-profile-pic.jpg" alt="Profile" id="menu-profile-pic" class="menu__profile-pic">
       </nav>
-      <p id="footer-copyright" class="footer__copyright">© 2021 INSTAGRAM FROM FACEBOOK</p>
-    </footer>
+    </header>
 
-  </aside>
+    <div class="main-feed-page-container">
+      <main class="feed-main-container">
+        <section id="stories-container" class="main__stories">
+          <img src="./assets/img/svg-icons/solid-color/chevron-sign-left.svg" alt="Scroll left" id="stories-left-arrow" class="stories__arrow stories__arrow--left hidden">
+          <img src="./assets/img/svg-icons/solid-color/chevron-sign-right.svg" alt="Scroll right" id="stories-right-arrow" class="stories__arrow stories__arrow--right">
+
+          <!-- * EXAMPLE STORIES * -->
+          <div id="story-card" class="stories__card stories__card--own">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>
+
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+          <div id="story-card" class="stories__card">
+            <div id="stories-img-container" class="card__img-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="" id="stories-img" class="card__img">
+            </div>
+            <span id="story-username" class="card__username">Troy McLure</span>
+          </div>        
+        </section>
+
+        <section id="feed" class="feed">
+
+          <!-- * EXAMPLE CARD * -->
+          <article class="feed__post">
+            <header class="post__header">
+              <div class="header__profile-pic"></div>
+              <div class="header__info">
+                <div class="info__username"></div>
+                <div class="info__location"></div>
+              </div>
+              <div class="header__options"></div>
+            </header>
+            <img src="" alt="" class="post__img">
+            <section class="post__info">
+              <div id="post-info-options" class="info__options"></div>
+              <div id="post-info-likes" class="info__likes"></div>
+            </section>
+            <section id="post-comments-container" class="post__comments">
+              <div class="comments__load-more"></div>
+              <div class="comments__coment"></div>
+              <div class="comments__coment"></div>
+            </section>
+            <section class="post__add-comment">
+              <img src="" alt="" class="add-comment__emoji">
+              <input type="text" class="add-comment__input">
+              <button class="add-comment__submit"></button>
+            </section>
+          </article>
+
+        </section>
+
+      </main>
+
+      <aside id="" class="aside-info">
+
+        <section id="" class="aside-info__user">
+          <div id="" class="user__profile-pic"></div>
+          <div id="" class="user__info">
+            <div id="" class="user__info--username"></div>
+            <div id="" class="user__info--first-name"></div>
+          </div>
+          <a href="#" id="" class="user__change-user"></a>
+        </section>
+
+        <section id="" class="aside-info__suggestions">
+          <header id=""  class="suggestions__header">
+            <div id="" class="suggestions__header--tittle"></div>
+            <div id="" class="suggestions__header--see-all"></div>
+          </header>
+          
+          <!-- * SUGGESTION EXAMPLE * -->
+          <div class="suggestion">
+            <div class="suggestion__img"></div>
+            <div class="suggestion__info">
+              <div class="suggestion__info--name"></div>
+              <div class="suggestion__info--relation"></div>
+            </div>
+            <div class="suggestion__follow"></div>
+          </div>
+        </section>
+
+        <footer id="footer" class="footer">
+            <ul class="links__container">
+              <a href="#" class="links__link"><li>About</li></a>
+              <a href="#" class="links__link"><li>Help</li></a>
+              <a href="#" class="links__link"><li>Press</li></a>
+              <a href="#" class="links__link"><li>API</li></a>
+              <a href="#" class="links__link"><li>Jobs</li></a>
+              <a href="#" class="links__link"><li>Privacy</li></a>
+              <a href="#" class="links__link"><li>Terms</li></a>
+              <a href="#" class="links__link"><li>Locations</li></a>
+              <a href="#" class="links__link"><li>Top Accounts</li></a>
+              <a href="#" class="links__link"><li>Hashtags</li></a>
+              <a href="#" class="links__link"><li>Language</li></a>
+            </ul>
+          </nav>
+          <p id="footer-copyright" class="footer__info">© 2021 INSTAGRAM FROM FACEBOOK</p>
+        </footer>
+
+      </aside>
+    </div>
+  </div>
 </body>
 </html>

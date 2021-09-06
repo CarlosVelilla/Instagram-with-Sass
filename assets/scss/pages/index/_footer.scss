@@ -3,12 +3,20 @@
 .footer {
   color: #9F8E8E;
   justify-self: flex-end;
+  font-size: 0.75rem;
 
     &__info {
       display: flex;
       justify-content: center;
       align-items: center;
     }
+}
+
+.info__lang-selector {
+  border: 1px transparent;
+  background-color: #FAFAFA;
+  color: #9F8E8E;
+  cursor: pointer;
 }
 
 .links__container {
@@ -21,16 +29,8 @@
 .links__link {
   @extend %remove-link-style !optional;
   list-style-type: none;
-  font-size: 0.75rem;
-  
+
     &:not(:last-child) {
       padding-right: 1rem;
     }
-}
-
-.info__lang-selector {
-  border: 1px transparent;
-  background-color: #FAFAFA;
-  color: #9F8E8E;
-  cursor: pointer;
 }

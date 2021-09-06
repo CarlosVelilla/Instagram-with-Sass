@@ -7,10 +7,10 @@
   <title>Instagram</title>
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="icon" href="./favicon.svg">
-  <script src="./assets/js/test-functions.js" defer async></script>
+  <script src="./assets/js/main.js" defer async></script>
 </head>
 <body>
-  <div class="page-container">
+  <div class="index__page-container">
     <main class="main-container">
       <!-- <aside class="main-container__aside-container">
         <section class="aside-container__carousel">
@@ -20,11 +20,11 @@
       <article class="main-container__login">
         <section class="login__prime">
           <header class="prime__header">
-            <img src="./assets/img/svg-logos/logo-black-instagram.svg" alt="Instagram logo" id="header-logo" class="header__logo">
+            <img src="./assets/img/svg-logos/logo-black-instagram.svg" alt="Instagram logo" id="header-logo" class="index-header__logo">
           </header>
           <section class="prime__login">
             <input type="text" name="username" class="login__input login__input--username" placeholder="Phone number, username or email">
-            <input type="password" name="password" class="login__input login__input--password" placeholder="Password">
+            <input type="password" name="password" id="password-input" class="login__input login__input--password" placeholder="Password">
             <a href="./feed.html" id="login-btn" class="login__btn password-unvalid">Log In</a>
           </section>
           <div class="prime__division">OR</div>
@@ -46,7 +46,6 @@
       </article>
     </main>
     <footer class="footer">
-      <section class="footer__links">
         <ul class="links__container">
           <a href="#" class="links__link"><li>About</li></a>
           <a href="#" class="links__link"><li>Blog</li></a>
@@ -67,7 +66,6 @@
           <a href="#" class="links__link"><li>Music</li></a>
           <a href="#" class="links__link"><li>Visual Arts</li></a>
         </ul>
-      </section>
       <section class="footer__info">
         <select name="language" class="info__lang-selector">
           <option value="english" selected>English</option>

@@ -1,0 +1,66 @@
+.feed__page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed__header {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0.25rem 0 0.25rem;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+}
+
+.feed-header__logo {
+  width: 7rem;
+  padding-top: 0.25rem;
+}
+
+.header__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  &__container {
+    position: relative;
+  }
+  
+  &__input::placeholder {
+    color: lightgrey;
+    text-align: center;
+  }
+  
+  &-icon {
+    width: 0.75rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: .4rem;
+    left: -4rem;
+    right: 0;
+    text-align: center;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu {
+  &__icon {
+    width: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  &__profile-pic {
+    width: 1.5rem;
+    border-radius: 50%;
+  }
+}
+
+

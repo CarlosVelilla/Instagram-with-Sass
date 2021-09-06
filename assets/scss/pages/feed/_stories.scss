@@ -1,0 +1,56 @@
+@use '../../abstracts/utils';
+
+.main__stories {
+  width: 80%;
+  display: flex;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid lightgrey;
+  // OVERFLOW //
+  overflow: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+  position: relative;
+}
+
+.stories__arrow {
+  width: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  cursor: pointer;
+
+  &--right {
+    right: 1rem;
+  }
+}
+
+.stories__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+}
+
+
+.card {
+  &__img {
+    width: 3.5rem;
+    border-radius: 50%;
+  }
+
+  &__username {
+    text-transform: lowercase;
+    font-size: 0.6rem;
+  }
+
+}
