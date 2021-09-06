@@ -1,3 +1,4 @@
+@use '../../abstracts/utils';
 @import './stories';
 
 .main-feed-page-container {
@@ -10,6 +11,153 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
   width: 50%;
   margin-left: 6rem;
+}
+
+.feed__post {
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  &__profile-pic-container {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(to right, red, purple);
+  }
+
+  &__profile-pic {
+    width: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 0 2px white;
+    cursor: pointer;
+  }
+
+  &__data-container {
+    margin-left: 1rem;
+  }
+
+  &__username {
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+}
+
+.header__options {
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.post__img {
+  width: 100%;
+}
+
+.post__info {
+  display: flex;
+  justify-content: space-between;
+
+  &-interact {
+    display: flex;
+  }
+
+  &-icon {
+    height: 1.5rem;
+    margin: .5rem;
+    cursor: pointer;
+
+    &--comment {
+      transform: scaleX(-1);
+    }
+  }
+}
+
+.post__likes {
+  margin-left: .5rem;
+  font-weight: 600;
+}
+
+.post__description {
+  margin: .5rem 0 0 .5rem;
+  &--author {
+    font-weight: 600;
+  }
+}
+
+.comments__load-more {
+  margin: .5rem 0 0 .5rem;
+  color: grey;
+}
+
+.comments__coment {
+  margin: .5rem 0 0 .5rem;
+  &--author {
+    font-weight: 600;
+  }
+}
+
+.post__time {
+  margin: .5rem 0 0 .5rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.post__add-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid lightgrey;
+
+  &--container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.add-comment {
+  &__input {
+    margin-left: 1rem;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: white;
+  }
+
+  &__emoji {
+    width: 1.5rem;
+    margin-left: .5rem;
+  }
+
+  &__submit {
+    margin-right: .5rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #00A2F8;
+  }
+
+  &__submit--disabled {
+    color: #00A2F866;
+  }
 }

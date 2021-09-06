@@ -122,3 +122,9 @@ Let's start with some theory about SCSS and SASS.
   <li>Hero icons: <a href="https://heroicons.com">https://heroicons.com</a></li>
   <li>Flaticon: <a href="https://www.flaticon.es">https://www.flaticon.es</a></li>
 </ul>
+
+### Other resources
+<ul>
+  <li>Gradient borders in CSS: <a href="https://css-tricks.com/gradient-borders-in-css">https://css-tricks.com/gradient-borders-in-css</a></li>
+  <!-- <li>Flaticon: <a href="https://www.flaticon.es">https://www.flaticon.es</a></li> -->
+</ul>

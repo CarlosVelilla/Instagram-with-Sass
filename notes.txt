@@ -81,3 +81,9 @@ Opacity %   255 Step        2 digit HEX prefix
 90%         229.50          E5
 95%         242.25          F2
 100%        255.00          FF
+
+
+
+
+Math random to likes :
+Math.floor(Math.random()*100)+1

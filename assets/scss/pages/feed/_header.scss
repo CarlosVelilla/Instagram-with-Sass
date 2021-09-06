@@ -29,16 +29,27 @@
   }
   
   &__input::placeholder {
-    color: lightgrey;
+    color: grey;
     text-align: center;
   }
+
+  &__input {
+    padding: .25rem 0;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: #FAFAFA;
+    border: 1px solid lightgrey;
+  }
+
   
   &-icon {
     width: 0.75rem;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: .4rem;
+    top: .5rem;
     left: -4rem;
     right: 0;
     text-align: center;

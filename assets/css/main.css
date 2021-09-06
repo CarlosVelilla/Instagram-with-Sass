@@ -588,23 +588,32 @@ body {
   position: relative;
 }
 .search__input::-moz-placeholder {
-  color: lightgrey;
+  color: grey;
   text-align: center;
 }
 .search__input:-ms-input-placeholder {
-  color: lightgrey;
+  color: grey;
   text-align: center;
 }
 .search__input::placeholder {
-  color: lightgrey;
+  color: grey;
   text-align: center;
+}
+.search__input {
+  padding: 0.25rem 0;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #FAFAFA;
+  border: 1px solid lightgrey;
 }
 .search-icon {
   width: 0.75rem;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 0.4rem;
+  top: 0.5rem;
   left: -4rem;
   right: 0;
   text-align: center;
@@ -641,10 +650,27 @@ body {
   visibility: hidden;
 }
 
+.fb-login__forgot-link, .links__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.index__page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 .main__stories {
   width: 80%;
   display: flex;
   margin: 2rem;
+  margin-right: 0;
   padding: 0.5rem 1rem;
   background-color: white;
   border: 1px solid lightgrey;
@@ -663,13 +689,17 @@ body {
 .stories__arrow {
   width: 1.5rem;
   position: absolute;
-  top: 50%;
+  top: 5rem;
   transform: translate(0, -50%);
+  z-index: 1;
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
   cursor: pointer;
 }
 .stories__arrow--right {
   right: 1rem;
+}
+.stories__arrow--left {
+  right: 65rem;
 }
 
 .stories__card {
@@ -681,9 +711,22 @@ body {
   margin-right: 0.75rem;
 }
 
+.card__img-container {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(to right, red, purple);
+}
+
 .card__img {
   width: 3.5rem;
   border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 0 2px white;
+  cursor: pointer;
 }
 .card__username {
   text-transform: lowercase;
@@ -700,8 +743,141 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
   width: 50%;
   margin-left: 6rem;
+}
+
+.feed__post {
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.info__profile-pic-container {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(to right, red, purple);
+}
+.info__profile-pic {
+  width: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 0 2px white;
+  cursor: pointer;
+}
+.info__data-container {
+  margin-left: 1rem;
+}
+.info__username {
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.header__options {
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.post__img {
+  width: 100%;
+}
+
+.post__info {
+  display: flex;
+  justify-content: space-between;
+}
+.post__info-interact {
+  display: flex;
+}
+.post__info-icon {
+  height: 1.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.post__info-icon--comment {
+  transform: scaleX(-1);
+}
+
+.post__likes {
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.post__description {
+  margin: 0.5rem 0 0 0.5rem;
+}
+.post__description--author {
+  font-weight: 600;
+}
+
+.comments__load-more {
+  margin: 0.5rem 0 0 0.5rem;
+  color: grey;
+}
+
+.comments__coment {
+  margin: 0.5rem 0 0 0.5rem;
+}
+.comments__coment--author {
+  font-weight: 600;
+}
+
+.post__time {
+  margin: 0.5rem 0 0 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.post__add-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid lightgrey;
+}
+.post__add-comment--container {
+  display: flex;
+  align-items: center;
+}
+
+.add-comment__input {
+  margin-left: 1rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: white;
+}
+.add-comment__emoji {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+}
+.add-comment__submit {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #00A2F8;
+}
+.add-comment__submit--disabled {
+  color: #00A2F866;
 }
 
 .aside-info {
