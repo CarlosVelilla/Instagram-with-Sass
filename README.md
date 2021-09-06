@@ -128,3 +128,30 @@ Let's start with some theory about SCSS and SASS.
   <li>Gradient borders in CSS: <a href="https://css-tricks.com/gradient-borders-in-css">https://css-tricks.com/gradient-borders-in-css</a></li>
   <!-- <li>Flaticon: <a href="https://www.flaticon.es">https://www.flaticon.es</a></li> -->
 </ul>
+
+### Useful information
+<p>I have find useful this information below:</p>
+<p>ADD OPACITY TO HEX COLOR:</p>
+<p>Opacity %   255 Step        2 digit HEX prefix<br>
+0%          0.00            00<br>
+5%          12.75           0C<br>
+10%         25.50           19<br>
+15%         38.25           26<br>
+20%         51.00           33<br>
+25%         63.75           3F<br>
+30%         76.50           4C<br>
+35%         89.25           59<br>
+40%         102.00          66<br>
+45%         114.75          72<br>
+50%         127.50          7F<br>
+55%         140.25          8C<br>
+60%         153.00          99<br>
+65%         165.75          A5<br>
+70%         178.50          B2<br>
+75%         191.25          BF<br>
+80%         204.00          CC<br>
+85%         216.75          D8<br>
+90%         229.50          E5<br>
+95%         242.25          F2<br>
+100%        255.00          FF
+</p>

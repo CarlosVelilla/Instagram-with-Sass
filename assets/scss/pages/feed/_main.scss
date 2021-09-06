@@ -19,6 +19,7 @@
 .feed__post {
   background-color: white;
   margin-bottom: 2rem;
+  border: 1px solid lightgrey;
 }
 
 .post__header {
@@ -105,6 +106,7 @@
 .comments__load-more {
   margin: .5rem 0 0 .5rem;
   color: grey;
+  cursor: pointer;
 }
 
 .comments__coment {
@@ -135,8 +137,13 @@
   }
 }
 
+textarea:focus, input:focus{
+  outline: none;
+}
+
 .add-comment {
   &__input {
+    resize: none;
     margin-left: 1rem;
     border-top-style: hidden;
     border-right-style: hidden;
@@ -148,6 +155,7 @@
   &__emoji {
     width: 1.5rem;
     margin-left: .5rem;
+    cursor: pointer;
   }
 
   &__submit {

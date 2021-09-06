@@ -667,7 +667,7 @@ body {
 }
 
 .main__stories {
-  width: 80%;
+  width: 76%;
   display: flex;
   margin: 2rem;
   margin-right: 0;
@@ -699,7 +699,7 @@ body {
   right: 1rem;
 }
 .stories__arrow--left {
-  right: 65rem;
+  right: 60rem;
 }
 
 .stories__card {
@@ -751,6 +751,7 @@ body {
 .feed__post {
   background-color: white;
   margin-bottom: 2rem;
+  border: 1px solid lightgrey;
 }
 
 .post__header {
@@ -829,6 +830,7 @@ body {
 .comments__load-more {
   margin: 0.5rem 0 0 0.5rem;
   color: grey;
+  cursor: pointer;
 }
 
 .comments__coment {
@@ -858,7 +860,12 @@ body {
   align-items: center;
 }
 
+textarea:focus, input:focus {
+  outline: none;
+}
+
 .add-comment__input {
+  resize: none;
   margin-left: 1rem;
   border-top-style: hidden;
   border-right-style: hidden;
@@ -869,6 +876,7 @@ body {
 .add-comment__emoji {
   width: 1.5rem;
   margin-left: 0.5rem;
+  cursor: pointer;
 }
 .add-comment__submit {
   margin-right: 0.5rem;
@@ -881,9 +889,128 @@ body {
 }
 
 .aside-info {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
   margin-right: 11rem;
+}
+
+.aside-info__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding-top: 2.5rem;
+  margin-left: 2rem;
+}
+
+.user__info {
+  margin-left: 1rem;
+}
+.user__info-container {
+  display: flex;
+  align-items: center;
+}
+
+.user__profile-pic-container {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.user__profile-pic {
+  width: 3.5rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 0 2px white;
+  cursor: pointer;
+}
+
+.user__info--username {
+  font-weight: 600;
+}
+.user__info--first-name {
+  color: grey;
+}
+
+.user__change-user {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #00A2F8;
+}
+
+.aside-info__suggestions {
+  width: 50%;
+}
+
+.suggestion__info {
+  margin-left: 1rem;
+}
+.suggestion__info-container {
+  display: flex;
+  align-items: center;
+}
+
+.suggestions__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.suggestions__header--tittle {
+  color: grey;
+  font-weight: 500;
+}
+.suggestions__header--see-all {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.aside-suggestion__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.suggestion__info {
+  margin-left: 1rem;
+}
+.suggestion__info-container {
+  display: flex;
+  align-items: center;
+}
+
+.suggestion__profile-pic {
+  width: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.suggestion__info--username {
+  font-weight: 600;
+}
+.suggestion__info--followed-by {
+  margin-top: 0.2rem;
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.suggestion__follow-user {
+  margin-right: -0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #00A2F8;
 }/*# sourceMappingURL=main.css.map */

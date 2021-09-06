@@ -35,89 +35,45 @@
         <img src="./assets/img/svg-icons/solid-color/chevron-sign-right.svg" alt="Scroll right" id="stories-right-arrow" class="stories__arrow stories__arrow--right">
         <section id="stories-container" class="main__stories"></section>
 
-        <section id="feed" class="feed">
-
-          <!-- * EXAMPLE CARD * -->
-          <!-- <article class="feed__post">
-            <header class="post__header">
-              <div class="header__info">
-                <div class="info__profile-pic-container"><img src="./assets/img/feed/user-profile-pic.jpg" alt="User profile pic" class="info__profile-pic"></img></div>
-                  <div class="info__data-container">
-                    <div class="info__username">_gobi</div>
-                    <div class="info__location">San Pepito de los Manantiales</div>
-                  </div>
-              </div>
-              <img src="./assets/img/svg-icons/outline/options.svg" alt="Post options" class="header__options"></img>
-            </header>
-
-            <img src="./assets/img/feed/post-example.jpg" alt="Post image" class="post__img">
-            <section class="post__info">
-              <div class="post__info-interact">
-                <img src="./assets/img/svg-icons/outline/heart.svg" alt="Like this post" class="post__info-icon" data-interaction="like-out"></img>
-                <img src="./assets/img/svg-icons/outline/chat.svg" alt="Comment this post" class="post__info-icon post__info-icon--comment" data-interaction="comment"></img>
-                <img src="./assets/img/svg-icons/outline/paper-airplane.svg" alt="Text this user" class="post__info-icon" data-interaction="chat"></img>
-              </div>
-              <div class="post__info-save">
-                <img src="./assets/img/svg-icons/outline/bookmark.svg" alt="Like this post" class="post__info-icon" data-interaction="save-out"></img>
-              </div>
-            </section>
-            <section class="post__likes">21 likes</section>
-            <section class="post__description">
-              <span class="post__description--author">_gobi</span>
-              <span class="post__description--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, excepturi sed laudantium voluptas.</span>
-            </section>
-            <section class="post__comments">
-              <div class="comments__load-more">View all 17 comments</div>
-              <div class="comments__coment">
-                <span class="comments__coment--author">Pepito</span>
-                <span class="comments__coment--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, excepturi sed laudantium voluptas.</span>
-              </div>
-              <div class="comments__coment">
-                <span class="comments__coment--author">Juanito</span>
-                <span class="comments__coment--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, excepturi sed laudantium voluptas.</span>
-              </div>
-            </section>
-            <div class="post__time">6 HOURS AGO</div>
-            <section class="post__add-comment" data-test>
-              <div class="post__add-comment--container">
-                <img src="./assets/img/svg-icons/outline/emoji-happy.svg" alt="Display emoji window" class="add-comment__emoji">
-                <textarea class="add-comment__input" data-input="id-post-1" placeholder="Add a comment..."></textarea>
-              </div>
-              <a href="#" class="add-comment__submit add-comment__submit--disabled" data-post="id-post-1">Post</a>
-            </section>
-          </article> -->
-
-        </section>
+        <section id="feed" class="feed"></section>
 
       </main>
 
-      <aside id="" class="aside-info">
+      <aside class="aside-info">
 
-        <section id="" class="aside-info__user">
-          <div id="" class="user__profile-pic"></div>
-          <div id="" class="user__info">
-            <div id="" class="user__info--username"></div>
-            <div id="" class="user__info--first-name"></div>
-          </div>
-          <a href="#" id="" class="user__change-user"></a>
-        </section>
-
-        <section id="" class="aside-info__suggestions">
-          <header id=""  class="suggestions__header">
-            <div id="" class="suggestions__header--tittle"></div>
-            <div id="" class="suggestions__header--see-all"></div>
-          </header>
-          
-          <!-- * SUGGESTION EXAMPLE * -->
-          <div class="suggestion">
-            <div class="suggestion__img"></div>
-            <div class="suggestion__info">
-              <div class="suggestion__info--name"></div>
-              <div class="suggestion__info--relation"></div>
+        <section class="aside-info__user">
+          <div class="user__info-container">
+            <div class="user__profile-pic-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="User profile pic" class="user__profile-pic"></img>
             </div>
-            <div class="suggestion__follow"></div>
+            <div class="user__info">
+              <div class="user__info--username">_gobi</div>
+              <div class="user__info--first-name">Carlos</div>
+            </div>
           </div>
+          <a href="#" class="user__change-user">Switch</a>
         </section>
+
+        <section id="aside-suggestions" class="aside-info__suggestions">
+          <div  class="suggestions__header">
+            <div class="suggestions__header--tittle">Suggestions For You</div>
+            <a href="#" class="suggestions__header--see-all">See All</a>
+          </div>
+          
+          <!-- <div class="aside-suggestion__user">
+            <div class="suggestion__info-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="User profile pic" class="suggestion__profile-pic"></img>
+              <div class="suggestion__info">
+                <div class="suggestion__info--username">_gobi</div>
+                <div class="suggestion__info--followed-by">Followed by Mr. Pinnaple + 5 more</div>
+              </div>
+            </div>
+            <a href="#" class="suggestion__follow-user">Follow</a>
+          </div> -->
+
+        </section>
+
+
 
         <footer id="footer" class="footer">
             <ul class="links__container">

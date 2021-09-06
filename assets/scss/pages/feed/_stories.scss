@@ -1,7 +1,7 @@
 @use '../../abstracts/utils';
 
 .main__stories {
-  width: 80%;
+  width: 76%;
   display: flex;
   margin: 2rem;
   margin-right: 0;
@@ -33,7 +33,7 @@
   }
 
   &--left {
-    right: 65rem;
+    right: 60rem;
   }
 }
 

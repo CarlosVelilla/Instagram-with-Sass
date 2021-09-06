@@ -1,7 +1,137 @@
 .aside-info {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
   margin-right: 11rem;
+}
+
+.aside-info__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding-top: 2.5rem;
+  margin-left: 2rem;
+}
+
+.user__info {
+  margin-left: 1rem;
+
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.user__profile-pic-container {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.user__profile-pic {
+  width: 3.5rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 0 2px white;
+  cursor: pointer;
+}
+
+.user__info {
+  &--username {
+    font-weight: 600;
+  }
+
+  &--first-name {
+    color: grey;
+  }
+}
+
+.user__change-user {
+  margin-right: .5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #00A2F8;
+}
+
+.aside-info__suggestions {
+  width: 50%;
+}
+
+.suggestion__info {
+  margin-left: 1rem;
+
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.suggestions__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+
+  &--tittle {
+    color: grey;
+    font-weight: 500;
+  }
+
+  &--see-all {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .9rem;
+  }
+}
+
+.aside-suggestion__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: .5rem;
+  margin-left: 1rem;
+}
+
+.suggestion__info {
+  margin-left: 1rem;
+
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.suggestion__profile-pic {
+  width: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.suggestion__info {
+  &--username {
+    font-weight: 600;
+  }
+
+  &--followed-by {
+    margin-top: 0.2rem;
+    color: grey;
+    font-size: 0.8rem;
+  }
+}
+
+.suggestion__follow-user {
+  margin-right: -0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #00A2F8;
 }
